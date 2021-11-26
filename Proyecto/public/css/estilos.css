@@ -1,0 +1,123 @@
+/*Estilos generales app*/
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+fieldset {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend {
+    width: inherit;
+    padding: 0 10px;
+    border-bottom: none;
+}
+
+
+/*Estilos formulario Administrador Listado*/
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+th {
+    background-color: #D7D7D7;
+}
+
+
+/*Estilos de vista pdf imprimible anexoV*/
+
+label {
+    font-size: 12px;
+}
+
+.dotted {
+    border-bottom: 1.5px dotted black;
+}
+
+p,
+span {
+    font-size: 12px;
+}
+
+
+/*Estilos formulario Peticion Alumno*/
+
+.formulario_grupo_input {
+    position: relative;
+}
+
+.formulario_sms_error {
+    font-size: 12px;
+    margin-bottom: 0;
+    color: red;
+    display: none;
+}
+
+.formulario_sms_error-activo {
+    display: block;
+}
+
+.formulario_validacion_estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    font-size: 16px;
+    z-index: 100;
+    opacity: 0;
+}
+
+.formulario_mensaje {
+    height: 45px;
+    line-height: 45px;
+    background-color: tomato;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario_mensaje-activo {
+    display: block;
+}
+
+.formulario_sms_exito {
+    font-size: 14px;
+    color: green;
+    display: none;
+}
+
+.formulario_sms_exito-activo {
+    display: block;
+}
+
+.formulario_grupo-valido .formulario_validacion_estado {
+    color: green;
+    opacity: 1;
+}
+
+.formulario_grupo-valido .formulario_input {
+    box-shadow: 1px 1px 0px 2px rgba(0, 255, 76, 0.8);
+    border: 2px solid green;
+}
+
+.formulario_grupo-erroneo .formulario_validacion_estado {
+    color: red;
+    opacity: 1;
+}
+
+.formulario_grupo-erroneo .formulario_label {
+    font-weight: bold;
+    color: red;
+}
+
+.formulario_grupo-erroneo .formulario_input {
+    box-shadow: 1px 1px 0px 2px rgba(255, 0, 0, 0.8);
+    border: 2px solid red;
+}
